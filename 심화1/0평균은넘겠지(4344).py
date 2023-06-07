@@ -10,4 +10,4 @@ for _ in range (C):
     up = len([A for A in score if A > average ])
     
     ratio = up / N * 100
-    print("{:.3f}".format(ratio))
+    print(f"{ratio:.3f}%")
