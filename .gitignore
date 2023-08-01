@@ -1,3 +1,12 @@
 
 .vscode/launch.json
 *.json
+*.vsidx
+*.lock
+.vs/BaekJoon/v17/.wsuo
+*.db
+*.db-shm
+*.db-wal
+*.opendb
+*.sqlite
+*.ipch
