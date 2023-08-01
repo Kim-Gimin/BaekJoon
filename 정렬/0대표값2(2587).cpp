@@ -5,16 +5,29 @@
 using namespace std;
 
 int main() {
-	int N;
-	cin >> N;
-	vector<int> numbers(N);
-	for (int i = 0; i < N; ++i) {
-		cin >> numbers[i];
-	}
-	sor(numbers.begin(), numbers.end());
-	for (int i = 0; i < N; ++i) {
-		cout << numbers[i] << endl;
-	}
-	return 0;
+    vector<int> numbers(5);
+    for (int i = 0; i < 5; ++i) {
+        cin >> numbers[i];
+    }
 
+    sort(numbers.begin(), numbers.end());
+
+    int sum = 0;
+    for (int i = 0; i < 5; ++i) {
+        sum += numbers[i];
+    }
+
+    int average = sum / 5;
+    int median;
+    if (numbers.size() % 2 == 1) {
+        median = numbers[2];
+    }
+    else {
+        median = (numbers[2] + numbers[3]) / 2;
+    }
+
+    cout << average << endl;
+    cout << median << endl;
+
+    return 0;
 }
